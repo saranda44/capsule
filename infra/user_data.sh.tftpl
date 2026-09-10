@@ -1,44 +1,42 @@
 #!/bin/bash
 set -e
 
-# Actualizar el sistema e instalar Nginx, Git y Node.js
+# 1. Actualizar el sistema e instalar Git y Nginx
 dnf update -y
-dnf install -y nginx git nodejs
+dnf install -y git nginx
 
-# Habilitar e iniciar el servicio Nginx
+# 2. Desinstalar la versión nativa de Node.js 18 para permitir la instalación de Node.js 20
+dnf remove -y nodejs nodejs-full-i18n || true
+
+# 3. Configurar e instalar Node.js 20 (LTS) desde NodeSource
+curl -fsSL https://rpm.nodesource.com/setup_20.x | bash -
+dnf install -y nodejs
+
+# 4. Habilitar e iniciar Nginx
 systemctl enable nginx
 systemctl start nginx
 
-# Clonar el repositorio del proyecto
+# 5. Clonar el repositorio del proyecto
 REPO_DIR="/var/www/capsule"
 rm -rf "$REPO_DIR"
 git clone ${repo_url} "$REPO_DIR"
 
-# Instalar dependencias y compilar la aplicación React (Vite)
+# 6. Instalar dependencias y compilar la aplicación React en app/
 cd "$REPO_DIR/app"
 npm install
 npm run build
 
-# Desplegar los archivos estáticos compilados en el directorio web de Nginx
+# 7. Desplegar los archivos estáticos compilados en el directorio web de Nginx
 rm -rf /usr/share/nginx/html/*
 cp -r dist/* /usr/share/nginx/html/
 chmod -R 755 /usr/share/nginx/html
 
-# Configurar Nginx con soporte para ruteo en Single Page Application (SPA)
-cat <<'EOF' > /etc/nginx/conf.d/react.conf
-server {
-    listen 80 default_server;
-    listen [::]:80 default_server;
-    server_name _;
-
-    root /usr/share/nginx/html;
-    index index.html;
-
-    location / {
-        try_files $uri $uri/ /index.html;
-    }
+# 8. Configurar Nginx para ruteo SPA (Single Page Application)
+cat <<'EOF' > /etc/nginx/default.d/spa.conf
+location / {
+    try_files $uri $uri/ /index.html;
 }
 EOF
 
-# Reiniciar Nginx para aplicar la configuración
+# 9. Reiniciar Nginx para aplicar los cambios
 systemctl restart nginx
