@@ -31,5 +31,12 @@ variable "key_name" {
 variable "ssh_allowed_cidr" {
   description = "CIDR block allowed to SSH into the instance"
   type        = string
-  default     = "148.201.223.136/32"
+  default     = "0.0.0.0/0"
 }
+
+variable "repo_url" {
+  description = "Git repository URL for the application"
+  type        = string
+  default     = "https://github.com/saranda44/capsule.git"
+}
+

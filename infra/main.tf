@@ -56,7 +56,7 @@ resource "aws_instance" "this" {
   key_name               = var.key_name
   vpc_security_group_ids = [aws_security_group.instance.id]
   user_data = templatefile("${path.module}/user_data.sh.tftpl", {
-    index_html = file("${path.module}/index.html")
+    repo_url = var.repo_url
   })
   user_data_replace_on_change = true
 
