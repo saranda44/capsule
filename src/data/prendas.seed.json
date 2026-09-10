@@ -1,1 +1,228 @@
-[]
+[
+  {
+    "id": "necklace",
+    "nombre": "Collar minimalista",
+    "categoria": "accesorios",
+    "tipoAccesorio": "joyeria",
+    "ocasiones": ["oficina", "casual", "salida"],
+    "imagenUrl": "/prendas/Necklace.png"
+  },
+  {
+    "id": "quilt-jacket",
+    "nombre": "Chamarra acolchada",
+    "categoria": "outerwear",
+    "ocasiones": ["casual", "salida"],
+    "imagenUrl": "/prendas/Quilt_Jacket.png"
+  },
+  {
+    "id": "bag",
+    "nombre": "Bolsa de mano negra",
+    "categoria": "accesorios",
+    "tipoAccesorio": "bolsa",
+    "ocasiones": ["oficina", "casual", "salida"],
+    "imagenUrl": "/prendas/bag.png"
+  },
+  {
+    "id": "black-blouse",
+    "nombre": "Blusa negra",
+    "categoria": "top",
+    "ocasiones": ["oficina", "casual", "salida"],
+    "imagenUrl": "/prendas/black_blouse.png"
+  },
+  {
+    "id": "blouse",
+    "nombre": "Blusa blanca",
+    "categoria": "top",
+    "ocasiones": ["oficina", "casual"],
+    "imagenUrl": "/prendas/blouse.png"
+  },
+  {
+    "id": "blouse2",
+    "nombre": "Blusa de vestir",
+    "categoria": "top",
+    "ocasiones": ["oficina", "salida"],
+    "imagenUrl": "/prendas/blouse2.png"
+  },
+  {
+    "id": "blue-jeans",
+    "nombre": "Jeans azules recto",
+    "categoria": "bottom",
+    "ocasiones": ["casual", "salida"],
+    "imagenUrl": "/prendas/blue_jeans.png"
+  },
+  {
+    "id": "bracelet",
+    "nombre": "Brazalete dorado",
+    "categoria": "accesorios",
+    "tipoAccesorio": "joyeria",
+    "ocasiones": ["oficina", "casual", "salida"],
+    "imagenUrl": "/prendas/bracelet.png"
+  },
+  {
+    "id": "cap",
+    "nombre": "Gorra deportiva",
+    "categoria": "accesorios",
+    "tipoAccesorio": "cabeza",
+    "ocasiones": ["casual"],
+    "imagenUrl": "/prendas/cap.png"
+  },
+  {
+    "id": "cinto",
+    "nombre": "Cinturón de piel negro",
+    "categoria": "accesorios",
+    "tipoAccesorio": "cinturon",
+    "ocasiones": ["oficina", "casual", "salida"],
+    "imagenUrl": "/prendas/cinto.png"
+  },
+  {
+    "id": "demin",
+    "nombre": "Pantalón mezclilla oscura wide-leg",
+    "categoria": "bottom",
+    "ocasiones": ["casual", "salida"],
+    "imagenUrl": "/prendas/demin.png"
+  },
+  {
+    "id": "earrings",
+    "nombre": "Aretes dorados",
+    "categoria": "accesorios",
+    "tipoAccesorio": "joyeria",
+    "ocasiones": ["oficina", "casual", "salida"],
+    "imagenUrl": "/prendas/earrings.png"
+  },
+  {
+    "id": "glasses",
+    "nombre": "Lentes de vista",
+    "categoria": "accesorios",
+    "tipoAccesorio": "joyeria",
+    "ocasiones": ["oficina", "casual"],
+    "imagenUrl": "/prendas/glasses.png"
+  },
+  {
+    "id": "heels",
+    "nombre": "Zapatillas / Tacones negros",
+    "categoria": "shoes",
+    "ocasiones": ["oficina", "salida"],
+    "imagenUrl": "/prendas/heels.png"
+  },
+  {
+    "id": "hoodie",
+    "nombre": "Sudadera con capucha",
+    "categoria": "outerwear",
+    "ocasiones": ["casual"],
+    "imagenUrl": "/prendas/hoodie.png"
+  },
+  {
+    "id": "jacket",
+    "nombre": "Blazer estructurado",
+    "categoria": "outerwear",
+    "ocasiones": ["oficina", "salida"],
+    "imagenUrl": "/prendas/jacket.png"
+  },
+  {
+    "id": "jean-jacket",
+    "nombre": "Chamarra de mezclilla",
+    "categoria": "outerwear",
+    "ocasiones": ["casual"],
+    "imagenUrl": "/prendas/jean_jacket.png"
+  },
+  {
+    "id": "jean-shorts",
+    "nombre": "Shorts de mezclilla",
+    "categoria": "bottom",
+    "ocasiones": ["casual"],
+    "imagenUrl": "/prendas/jean_shorts.png"
+  },
+  {
+    "id": "jeans",
+    "nombre": "Jeans clásicos",
+    "categoria": "bottom",
+    "ocasiones": ["casual"],
+    "imagenUrl": "/prendas/jeans.png"
+  },
+  {
+    "id": "pleat",
+    "nombre": "Pantalón sastre gris con pinzas",
+    "categoria": "bottom",
+    "ocasiones": ["oficina", "casual", "salida"],
+    "imagenUrl": "/prendas/pleat.png"
+  },
+  {
+    "id": "shoes",
+    "nombre": "Tenis Adidas Samba negros",
+    "categoria": "shoes",
+    "ocasiones": ["casual"],
+    "imagenUrl": "/prendas/shoes.png"
+  },
+  {
+    "id": "shoes2",
+    "nombre": "Tenis Adidas café",
+    "categoria": "shoes",
+    "ocasiones": ["casual"],
+    "imagenUrl": "/prendas/shoes2.png"
+  },
+  {
+    "id": "shoes3",
+    "nombre": "Baleleras negras",
+    "categoria": "shoes",
+    "ocasiones": ["oficina", "casual", "salida"],
+    "imagenUrl": "/prendas/shoes3.png"
+  },
+  {
+    "id": "shoes4",
+    "nombre": "Baleleras Puma plateadas",
+    "categoria": "shoes",
+    "ocasiones": ["casual", "salida"],
+    "imagenUrl": "/prendas/shoes4.png"
+  },
+  {
+    "id": "shorts",
+    "nombre": "Shorts casuales",
+    "categoria": "bottom",
+    "ocasiones": ["casual"],
+    "imagenUrl": "/prendas/shorts.png"
+  },
+  {
+    "id": "skirt",
+    "nombre": "Falda midi",
+    "categoria": "bottom",
+    "ocasiones": ["oficina", "casual", "salida"],
+    "imagenUrl": "/prendas/skirt.png"
+  },
+  {
+    "id": "sunglasses",
+    "nombre": "Lentes de sol",
+    "categoria": "accesorios",
+    "tipoAccesorio": "joyeria",
+    "ocasiones": ["casual", "salida"],
+    "imagenUrl": "/prendas/sunglasses.png"
+  },
+  {
+    "id": "sweater",
+    "nombre": "Suéter de tejido",
+    "categoria": "top",
+    "ocasiones": ["oficina", "casual"],
+    "imagenUrl": "/prendas/sweater.png"
+  },
+  {
+    "id": "top",
+    "nombre": "Top básico",
+    "categoria": "top",
+    "ocasiones": ["casual", "salida"],
+    "imagenUrl": "/prendas/top.png"
+  },
+  {
+    "id": "tshirt",
+    "nombre": "Playera / T-shirt básica",
+    "categoria": "top",
+    "ocasiones": ["casual"],
+    "imagenUrl": "/prendas/tshirt.png"
+  },
+  {
+    "id": "watch",
+    "nombre": "Reloj de pulsera",
+    "categoria": "accesorios",
+    "tipoAccesorio": "joyeria",
+    "ocasiones": ["oficina", "casual", "salida"],
+    "imagenUrl": "/prendas/watch.png"
+  }
+]
