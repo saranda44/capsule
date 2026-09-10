@@ -1,4 +1,4 @@
-# Generador de Combinaciones — Capsule Wardrobe
+# Capsule
 
 Herramienta web para maximizar la versatilidad de un armario cápsula, generando combinaciones automáticas de outfits, con opción de bloquear prendas específicas y filtrar por ocasión.
 
